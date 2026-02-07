@@ -1,0 +1,17 @@
+{
+  "id2label": {
+    "0": "Other (Non-motorists or Cyclists)",
+    "1": "E-scooter",
+    "2": "E-bike"
+  },
+  "label2id": {
+    "Other (Non-motorists or Cyclists)": 0,
+    "E-scooter": 1,
+    "E-bike": 2
+  },
+  "class_weights": {
+    "Other (Non-motorists or Cyclists)": 0.7348927875243665,
+    "E-scooter": 0.9549138804457954,
+    "E-bike": 1.689068100358423
+  }
+}
