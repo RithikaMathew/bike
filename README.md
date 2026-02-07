@@ -185,13 +185,7 @@ Test Loss:      0.5643
 - Class weighting successfully prevented the model from ignoring the minority E-bike class
 
 #### Confusion Matrix (Test Set)
-```
-                                   Predicted
-                                   Other  E-scooter  E-bike
-Actual Other (Non-motorists)        155         20       9
-       E-scooter                     11        129       1
-       E-bike                         9          1      70
-```
+![alt text](image.png)
 
 **Analysis:**
 - **Other class:** 155/184 correct (84.2%) - Most errors confuse with E-scooter (20) and E-bike (9)
@@ -216,11 +210,6 @@ Actual Other (Non-motorists)        155         20       9
 4. **E-scooter** (Confidence: 89.5%)
    > "Individual riding electric scooter lost control on wet pavement and fell. Minor scrapes and bruises."
 
-5. **Other** (Confidence: 93.8%)
-   > "Traditional bicycle rider hit by opening car door. Rider sustained injuries to shoulder and wrist."
-
-6. **E-bike** (Confidence: 87.2%)
-   > "Person on motorized bike struck vehicle from behind while vehicle was stopped at red light."
 
 #### Edge Cases and Misclassifications
 
@@ -303,8 +292,14 @@ df_results = classify_excel_batch('new_crashes.xlsx')
 - `final_crash_classifier/` - Trained model (ready for inference)
 - `NEW.xlsx` - Final labeled dataset from bike_processing_complete.ipynb
 - `nolabel_classified.xlsx` - testing samples on new dataset (escooter_ebike_crash_news_subasish das dataset)
+- `nolabel.xlsx` - escooter_ebike_crash_news_subasish das dataset
+- `nolabeluse.xlsx` - bike 2011 to 2022_MetroPlanOrlando_Mighk Wilson dataset
 - `README.md` - This documentation
+- `reports` - Crash narratives zip folders
 - `bike_data_with_narratives.xlsx` - result of nolabeluse.xlsx with only 15 matches
+- `label.xlsx` - emobility-classification_Andrew_150 labels dataset
+- `bike_data_with_narratives.xlsx` - result of nolabeluse.xlsx with only 15 matches
+
 
 ---
 
